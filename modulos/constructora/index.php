@@ -1,5 +1,5 @@
-<?php include'templates/header.php'?>
+<?php include'../../templates/header.php'?>
 
-<?php include'/public/html/constructora/home.html'?>
+<?php include'../../public/html/constructora/home.html'?>
 
-<?php include'templates/footer.php'?>
+<?php include'../../templates/footer.php'?>

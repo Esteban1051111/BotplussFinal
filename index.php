@@ -1,7 +1,5 @@
-<?php include'templates/header.php'?>
-
-<?php include'public/html/home.html'?>
 
 
+<?php include'public/html/login.html'?>
 
-<?php include'templates/footer.php'?>
+
