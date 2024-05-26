@@ -1,75 +1,157 @@
-/* file: styles.css */
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Header */
 #header {
-    display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
-    background-color: #74b959; /* color de fondo del header */
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 70px; /* Altura del header, ajusta según tus necesidades */
-    z-index: 1000; /* Asegura que el header esté al frente */
-  }
-  
-  #header-img {
-    width: 70px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin-right: 30px;
-  }
-  
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  background-color: #0faedd; /* Color de fondo del header */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 70px; /* Altura del header, ajusta según tus necesidades */
+  z-index: 1000; /* Asegura que el header esté al frente */
+}
+
+#header-img {
+  width: 70px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 30px;
+}
+
+.logo-empresa {
+  width: 70px; /* Ancho del logo */
+  height: 50px; /* Alto del logo */
+  position: absolute;
+  top: 10px; /* Margen a la parte de arriba */
+  right: 10px; /* Margen a la izquierda */
+}
+
+/* Navegación */
+nav {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  width: 100%; /* Asegura que el nav ocupe todo el ancho disponible */
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center; /* Centra los elementos dentro de la lista horizontalmente */
+  align-items: center; /* Centra los elementos dentro de la lista verticalmente */
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li {
+  margin: 0 20px; /* Espacio entre los elementos de la lista */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  color: #ee7203;
+}
+
+/* Ocultar el header en las páginas de inicio de sesión */
+.login-page #header,
+.restore-page #header,
+.newpass-page #header {
+  display: none;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 1024px) {
   .logo-empresa {
-    width: 70px; /* Ancho del logo */
-    height: 50px; /* Alto del logo */
-    position: absolute;
-    top: 10px; /* Margen a la parte de arriba */
-    right: 10px; /* Margen a la izquierda */
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    width: 100%; /* Asegura que el nav ocupe todo el ancho disponible */
-  }
-  
-  nav > ul {
-    display: flex;
-    justify-content: center; /* Centra los elementos dentro de la lista horizontalmente */
-    align-items: center; /* Centra los elementos dentro de la lista verticalmente */
-    list-style: none; /* Elimina los puntos de la lista */
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav > ul > li {
-    margin: 0 20px; /* Espacio entre los elementos de la lista */
-  }
-  
-  .nav-link {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  
-  .nav-link:hover {
-    color: #ee7203;
+      width: 60px;
+      height: 45px;
   }
 
-  /* Ocultar el header en las páginas de inicio de sesión */
-  .login-page #header {
-    display: none;
+  nav > ul > li {
+      margin: 0 15px;
   }
-  .restore-page #header {
-    display: none;
+
+  .nav-link {
+      font-size: 18px;
   }
-  .newpass-page #header {
-    display: none;
+}
+
+@media (max-width: 768px) {
+  #header {
+      flex-direction: column;
+      height: auto;
+      padding: 10px 0;
   }
-  
- 
-  
-  
+
+  #header-img {
+      position: static;
+      margin: 10px 0;
+  }
+
+  .logo-empresa {
+      position: static;
+      width: 50px;
+      height: 40px;
+      margin: 10px 0;
+  }
+
+  nav {
+      flex-direction: column;
+      width: auto;
+  }
+
+  nav > ul {
+      flex-direction: column;
+  }
+
+  nav > ul > li {
+      margin: 10px 0;
+  }
+
+  .nav-link {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #header {
+      padding: 5px 0;
+  }
+
+  #header-img {
+      width: 50px;
+      margin-right: 10px;
+  }
+
+  .logo-empresa {
+      width: 40px;
+      height: 30px;
+  }
+
+  nav > ul > li {
+      margin: 5px 0;
+  }
+
+  .nav-link {
+      font-size: 14px;
+  }
+}

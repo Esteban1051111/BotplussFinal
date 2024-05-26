@@ -6,7 +6,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Estilos del header */
+/* Estilos del header 
 #header {
   display: flex;
   justify-content: center;
@@ -27,7 +27,7 @@ body {
   top: 0;
   right: 0;
   margin-right: 30px;
-}
+}*/
 
 nav {
   display: flex;

@@ -9,37 +9,6 @@ body {
     background-color: #f2f2f2;
 }
 
-header {
-    background-color: #ff9800;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-header button {
-    padding: 10px 20px;
-    background-color: #ffffff;
-    color: #ff9800;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-header button:hover {
-    background-color: #f2f2f2;
-}
-
 main {
     display: flex;
     flex-direction: row;
@@ -142,9 +111,6 @@ button[type="submit"]:hover,
 button[type="button"]:hover {
     opacity: 0.9;
 }
-body {
-    font-family: 'Roboto', sans-serif;
-}
 
 .sidebar-button,
 .content-button {
@@ -174,8 +140,6 @@ body {
     margin-bottom: 20px;
 }
 
-
-
 .blue {
     background-color: #0faedd;
 }
@@ -186,4 +150,39 @@ body {
 
 .large {
     width: 100%;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    form label,
+    form input[type="date"],
+    button[type="submit"],
+    button[type="button"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar li img {
+        max-width: 60%;
+    }
+
+    .submit-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
 }

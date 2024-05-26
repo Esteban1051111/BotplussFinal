@@ -21,8 +21,8 @@
           <li><a class='nav-link' href='#cerrar-sesion'><i class="fas fa-sign-out-alt"></i></a></li> <!-- Solo el icono de cerrar sesión -->
         </ul>
       </nav>
-      <img id='header-img' src='/img/n2.png' alt='Company Logo'/>
-    </header>
+      <img id='header-img' src='../../public/img/n2.png' alt='Company Logo'/>
+</header>
    
         <!-- Aquí va el contenido principal de tu página -->
     
