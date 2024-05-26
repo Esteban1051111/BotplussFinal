@@ -1,18 +1,29 @@
-</main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
+<footer id='footer'>
+      <div class='footer-content'>
+        <div class='footer-section about'>
+          <h2>Sobre Nosotros</h2>
+          <p>Breve descripción sobre la empresa, su misión, visión y valores.</p>
+        </div>
+        <div class='footer-section links'>
+          <h2>Enlaces Rápidos</h2>
+          <ul>
+            <li><a href='#'>Nosotros</a></li>
+            <li><a href='#'>Servicios</a></li>
+            <li><a href='#'>Ilustraciones</a></li>
+            <li><a href='#'>Nuestro Equipo</a></li>
+          </ul>
+        </div>
+        <div class='footer-section contact'>
+          <h2>Contacto</h2>
+          <p>Dirección: Calletal talt tal</p>
+          <p>Teléfono: +57-3145150601</p>
+          <p>Email: soporte@innovatechmzles.com</p>
+        </div>
+      </div>
+      <div class='footer-bottom'>
+        &copy; 2024 Innovatech Manizales | Todos los derechos reservados
+      </div>
+    </footer>
     </body>
 </html> 
