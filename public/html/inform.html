@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/inform.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Constructora Las Galias - Informes</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Constructora Las Galias</h1>
+            <button onclick="window.location.href='index.html'">Volver al Inicio</button>
+        </div>
+    </header>
+    <main>
+        <div class="sidebar">
+            <h2>Módulo de Informes</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="/img/logo.jpeg" alt="Logo 1">
+                        <span>lo que queramos aca 1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/img/logo.jpeg" alt="Logo 2">
+                        <span>lo que queramos aca 2</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/img/logo.jpeg" alt="Logo 3">
+                        <span>lo que queramos aca 3</span>
+                    </a>
+                </li>
+                <!-- Añadir más items o logos según sea necesario -->
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Informes</h2>
+            <form action="generar_informe.php" method="post">
+                <label for="fecha-inicial">Fecha Inicial:</label>
+                <input type="date" id="fecha-inicial" name="fecha-inicial" required>
+                
+                <label for="fecha-final">Fecha Final:</label>
+                <input type="date" id="fecha-final" name="fecha-final" required>
+                
+                <button type="submit">Mostrar Informe en Línea</button>
+                <button type="button" onclick="descargarInforme()">Descargar Informe</button>
+            </form>
+        </div>
+    </main>
+    <script>
+        function descargarInforme() {
+            // Lógica para descargar el informe
+            alert('Descargando informe...');
+        }
+    </script>
+</body>
+</html>

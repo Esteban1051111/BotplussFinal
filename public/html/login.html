@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/loginstyle.css">
+    <title>Responsive Login</title>
+</head>
+<body>
+    <div class="container" class="login-page">
+        <div class="left">
+            <img src="/img/n2.png" alt="Logo Empresa" class="logo-empresa">
+            <div class="developer">
+                <img src="/img/innovapng.png" alt="Logo Desarrollador" class="logo-desarrollador">
+                <p>Desarrollado por Innovatech Manizales</p> 
+            </div>       
+        </div>
+        <div class="right">
+            <div class="titles">
+                <h1>Inicio Sesión</h1>
+                <p>Inicie sesión para continuar</p>
+            </div>
+            
+            <form action="login.php" method="post">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" required>
+                <button type="submit">Inicio</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos del header */
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #74b959;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 70px;
+  z-index: 1000;
+}
+
+#header-img {
+  width: 70px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li {
+  margin: 0 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  color: #ee7203;
+}
+
+/* Ocultar el header en páginas específicas */
+.login-page #header,
+.restore-page #header,
+.newpass-page #header {
+  display: none;
+}
+
+/* Estilos del footer */
+#footer {
+  background-color: #0faedd;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+  min-width: 250px;
+}
+
+.footer-section h2 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #66a850;
+  padding: 10px 0;
+  font-size: 14px;
+}
+/* Estilos para los enlaces */
+a {
+    color: black; /* Color por defecto del texto */
+    text-decoration: none; /* Eliminar subrayado por defecto */
+    transition: color 0.3s; /* Transición suave de color */
+  }
+  
+  /* Cambiar color al pasar el mouse sobre los enlaces */
+  a:hover {
+    color: #ee7203; /* Cambiar color al pasar el mouse */
+  }
+
+  /* Ocultar el header en las páginas de inicio de sesión */
+  .login-page #footer {
+    display: none;
+  }
+  .restore-page #footer {
+    display: none;
+  }
+  .newpass-page #footer {
+    display: none;
+  }
+  
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+}

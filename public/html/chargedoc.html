@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/registration.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Constructora Las Galias - Formulario</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Constructora Las Galias</h1>   
+            <div>
+                <button class="quick-button" onclick="window.location.href='index.html'">Radicar</button>
+                <button class="quick-button" onclick="window.location.href='index.html'">Cargue de Documentos</button>
+            </div>     
+            <button class="logout-button" onclick="window.location.href='index.html'">Cerrar Sesión</button>
+        </div>        
+    </header>
+    <main>
+        <div class="content">
+            <div class="data-block">
+                <h2>Búsqueda de Radicado</h2>
+                <div class="field-group">
+                    <label for="buscar-radicado">Buscar Radicado:</label>
+                    <input type="text" id="buscar-radicado" name="buscar-radicado" placeholder="Ingrese el número de radicado">
+                    <button type="button">Buscar</button>
+                </div>
+            </div>
+
+            <div class="data-block">
+                <h2>Carga de Documentos</h2>
+                <div class="data-block">
+                    <h2>Carga de Documentos</h2>
+                    <div class="field-group">
+                        <label for="documento-1">Certificado de Tradición:</label>
+                        <input type="file" id="documento-1" name="documento-1" accept=".pdf,.doc,.docx">
+                    </div>
+                    <div class="field-group">
+                        <label for="documento-2">Cédulas:</label>
+                        <input type="file" id="documento-2" name="documento-2" accept=".pdf,.doc,.docx">
+                    </div>
+                    <div class="field-group">
+                        <label for="documento-3">Carta banco:</label>
+                        <input type="file" id="documento-3" name="documento-3" accept=".pdf,.doc,.docx">
+                    </div>
+                    <div class="field-group">
+                        <label for="documento-4">Correo:</label>
+                        <input type="file" id="documento-4" name="documento-4" accept=".pdf,.doc,.docx">
+                    </div>
+                    <div class="field-group">
+                        <label for="documento-5">Licencias:</label>
+                        <input type="file" id="documento-5" name="documento-5" accept=".pdf,.doc,.docx">
+                    </div>
+                    <div class="field-group">
+                        <label for="documento-6">Cámaras de comercio:</label>
+                        <input type="file" id="documento-6" name="documento-6" accept=".pdf,.doc,.docx">
+                    </div>
+                    <div class="field-group">
+                        <label for="documento-7">Paz y Salvo de administración:</label>
+                        <input type="file" id="documento-7" name="documento-7" accept=".pdf,.doc,.docx">
+                    </div>
+                    <div class="field-group">
+                        <label for="documento-8">Carta de Constructora:</label>
+                        <input type="file" id="documento-8" name="documento-8" accept=".pdf,.doc,.docx">
+                    </div>
+                </div>
+                
+                <button type="submit">Enviar</button>
+                <button type="button">Guardar como borrador</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

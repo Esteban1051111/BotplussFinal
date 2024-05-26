@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/registration.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Constructora Las Galias - Formulario</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Constructora Las Galias</h1>   
+            <div>
+                <button class="quick-button" onclick="window.location.href='index.html'">Radicar</button>
+            <button class="quick-button" onclick="window.location.href='index.html'">Cargue de Documentos</button>
+            </div>     
+            <button class="logout-button" onclick="window.location.href='index.html'">Cerar Sesión</button>
+        </div>        
+    </header>
+    <main>
+        <div class="content">
+            <div class="data-block">
+                <h2>Datos de Radicado</h2>
+                <div class="field-group">
+                    <label for="numero-radicado">Número de Radicado:</label>
+                    <input type="number" id="numero-radicado" name="numero-radicado" required>
+                </div>
+                <div class="field-group">
+                    <label for="acto">Acto:</label>
+                    <select id="acto" name="acto" required>
+                        <option value="compraVenta">Compra-Venta</option>
+                        <option value="hipoteca">Hipoteca</option>
+                        <!-- Agrega más opciones según tus necesidades -->
+                    </select>
+                </div>
+                
+            </div>
+
+            <div class="data-block">
+                <h2>Primer Interviniente (Quién Vende)</h2>
+                <div class="field-group">
+                    <div>
+                        <label for="primer-nombre-vendedor">Primer Nombre:</label>
+                        <input type="text" id="primer-nombre-vendedor" name="primer-nombre-vendedor" required>
+                    </div>
+                    <div>
+                        <label for="segundo-nombre-vendedor">Segundo Nombre:</label>
+                        <input type="text" id="segundo-nombre-vendedor" name="segundo-nombre-vendedor">
+                    </div>
+                    <div>
+                        <label for="primer-apellido-vendedor">Primer Apellido:</label>
+                        <input type="text" id="primer-apellido-vendedor" name="primer-apellido-vendedor" required>
+                    </div>
+                    <div>
+                        <label for="segundo-apellido-vendedor">Segundo Apellido:</label>
+                        <input type="text" id="segundo-apellido-vendedor" name="segundo-apellido-vendedor">
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div>
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="data-block">
+                <h2>Segundo Interviniente (Quién Compra)</h2>
+                <div class="field-group">
+                    <div>
+                        <label for="primer-nombre-comprador">Primer Nombre:</label>
+                        <input type="text" id="primer-nombre-comprador" name="primer-nombre-comprador" required>
+                    </div>
+                    <div>
+                        <label for="segundo-nombre-comprador">Segundo Nombre:</label>
+                        <input type="text" id="segundo-nombre-comprador" name="segundo-nombre-comprador">
+                    </div>
+                    <div>
+                        <label for="primer-apellido-comprador">Primer Apellido:</label>
+                        <input type="text" id="primer-apellido-comprador" name="primer-apellido-comprador" required>
+                    </div>
+                    <div>
+                        <label for="segundo-apellido-comprador">Segundo Apellido:</label>
+                        <input type="text" id="segundo-apellido-comprador" name="segundo-apellido-comprador">
+                    </div>
+                    <div>
+                        <label for="telefono-comprador">Teléfono:</label>
+                        <input type="tel" id="telefono-comprador" name="telefono-comprador" required>
+                    </div>
+                    <div>
+                        <label for="correo-comprador">Correo Electrónico:</label>
+                        <input type="email" id="correo-comprador" name="correo-comprador" required>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="data-block">
+                <h2>Tercer Interviniente (Acredor)</h2>
+                <div class="field-group">
+                    <div>
+                        <label for="primer-nombre-acredor">Primer Nombre:</label>
+                        <input type="text" id="primer-nombre-acredor" name="primer-nombre-acredor" required>
+                    </div>
+                    <div>
+                        <label for="segundo-nombre-acredor">Segundo Nombre:</label>
+                        <input type="text" id="segundo-nombre-acredor" name="segundo-nombre-acredor">
+                    </div>
+                    <div>
+                        <label for="primer-apellido-acredor">Primer Apellido:</label>
+                        <input type="text" id="primer-apellido-acredor" name="primer-apellido-acredor" required>
+                    </div>
+                    <div>
+                        <label for="segundo-apellido-acredor">Segundo Apellido:</label>
+                        <input type="text" id="segundo-apellido-acredor" name="segundo-apellido-acredor">
+                    </div>
+                    <div>
+                        <label for="telefono-acredor">Teléfono:</label>
+                        <input type="tel" id="telefono-acredor" name="telefono-acredor" required>
+                    </div>
+                    <div>
+                        <label for="correo-acredor">Correo Electrónico:</label>
+                        <input type="email" id="correo-acredor" name="correo-acredor" required>
+                    </div>
+                </div>
+                
+            </div>
+            
+
+            <div class="data-block">
+                <h2>Observaciones</h2>
+                <textarea id="observaciones" name="observaciones" rows="4" cols="50"></textarea>
+                <button type="submit">Enviar</button>
+                <button type="button">Guardar como borrador</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

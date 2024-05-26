@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/loginstyle.css">
+    <title>New Password</title>
+</head>
+<body>
+    <div class="container" class="newpass-page">
+        <div class="left">
+            <img src="/img/n2.png" alt="Logo Empresa" class="logo-empresa">
+            <div class="developer">
+                <img src="/img/innovapng.png" alt="Logo Desarrollador" class="logo-desarrollador">
+                <p>Desarrollado por Innovatech Manizales</p> 
+            </div>       
+        </div>
+        <div class="right">
+            <div class="titles">
+                <h1>Nueva Contraseña</h1>                
+            </div>
+            
+            <form action="newpass.php" method="post">
+                <label for="for_newpass">Nueva Contraseña:</label>
+                <input type="password" id="newpass" name="newpass" required>
+                <label for="for_repeatpass">Repetir Contraseña:</label>
+                <input type="password" id="repeatpass" name="repeatpass" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

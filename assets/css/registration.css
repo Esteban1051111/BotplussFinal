@@ -1,0 +1,109 @@
+/* Estilos adicionales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff9800;
+    padding: 20px;
+    color: white;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;    
+    background-size: cover;
+    text-align: center;
+}
+
+.data-block {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.data-block h2 {
+    margin-bottom: 10px;
+}
+
+.data-block label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.data-block input,
+.data-block select,
+.data-block textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.data-block textarea {
+    resize: vertical;
+}
+
+.data-block button {
+    width: calc(50% - 5px);
+    padding: 10px;
+    background-color: #0faedd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.field-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.field-group div {
+    flex: 1 1 45%; /* Ajusta el ancho de los elementos */
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.button {
+    padding: 20px 40px;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    font-size: 50px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.logout-button {
+    padding: 10px 20px; /* Ajusta el padding según sea necesario */
+    background-color: #ffffff;
+    color: #ff9800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logout-button:hover {
+    background-color: #f2f2f2;
+}
+.quick-button{
+    padding: 10px 20px; /* Ajusta el padding según sea necesario */
+    background-color: #74b959;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}

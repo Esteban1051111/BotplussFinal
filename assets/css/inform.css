@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Cambio a Roboto como fuente principal */
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #ff9800;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #ff9800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+header button:hover {
+    background-color: #f2f2f2;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 80px); /* Ajusta según la altura del header */
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #4caf50;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.sidebar li img {
+    max-width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.sidebar li span {
+    display: block;
+    text-align: center;
+}
+
+.content {
+    width: 75%;
+    padding: 40px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: 80%;
+    text-align: left;
+}
+
+input[type="date"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"],
+button[type="button"] {
+    width: 80%;
+    padding: 10px;
+    background-color: #0faedd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button[type="button"] {
+    background-color: #ee7203;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+    opacity: 0.9;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar-button,
+.content-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0faedd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.sidebar-button:hover,
+.content-button:hover {
+    opacity: 0.9;
+}
+
+.submit-button {
+    padding: 20px 40px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+
+
+.blue {
+    background-color: #0faedd;
+}
+
+.submit-button:hover {
+    opacity: 0.9;
+}
+
+.large {
+    width: 100%;
+}
